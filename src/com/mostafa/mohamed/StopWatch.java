@@ -2,17 +2,17 @@ package com.mostafa.mohamed;
 
 public class StopWatch {
 
-    private long startTime,endTime;
+    private double startTime,endTime;
 
     public StopWatch() {
         this.startTime = System.currentTimeMillis();
     }
 
-    public long getStartTime() {
+    public double getStartTime() {
         return startTime;
     }
 
-    public long getEndTime() {
+    public double getEndTime() {
         return endTime;
     }
 
@@ -24,7 +24,7 @@ public class StopWatch {
         this.endTime = System.currentTimeMillis();
     }
 
-    public long  getElapsedTime() {
+    public double getElapsedTime() {
         return this.endTime - this.startTime;
     }
 }
